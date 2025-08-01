@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`top-0 w-full z-50 ${!isMobile ? "fixed" : ""} md:px-20`}
+        className={`top-0 w-full z-50 ${!isMobile ? "fixed" : ""} md:px-10`}
       >
         <div
           className={`mx-auto px-4 md:px-6 py-4 transition-all duration-300 ${
