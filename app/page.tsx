@@ -11,6 +11,7 @@ import FaqsSection from "@/components/faqs-section";
 import Testimonials from "@/components/testimonials";
 import CtaSection from "@/components/cta-section";
 import Footer from "@/components/footer";
+import BrandSection from "@/components/brand-section";
 export default function Home() {
   useEffect(() => {
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
@@ -37,12 +38,14 @@ export default function Home() {
       <Header />
       <HeroSection />
       <VideoSection />
-      <EditorFast />
+      <BrandSection />
+
+      {/* <EditorFast />
       <MeetFutureEditor />
       <WorksSection />
       <FaqsSection />
       <Testimonials />
-      <CtaSection />
+      <CtaSection /> */}
       <Footer />
     </main>
   );
