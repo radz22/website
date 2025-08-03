@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "EditConnect - Hire Amazing Video Editors for 70% Less",
+  title: "Digital Marketing - Hire Amazing Video Editors for 70% Less",
   description:
     "Connect with vetted video editors from the Philippines. Get high-quality edits at a fraction of the cost of US talent. Professional video editing services for creators and agencies.",
   keywords: [
@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     "video production",
     "affordable editing",
   ],
-  authors: [{ name: "EditConnect" }],
+  authors: [{ name: "Digital Marketing" }],
   openGraph: {
-    title: "EditConnect - Hire Amazing Video Editors for 70% Less",
+    title: "Digital Marketing - Hire Amazing Video Editors for 70% Less",
     description:
       "Connect with vetted video editors from the Philippines. Get high-quality edits at a fraction of the cost of US talent.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "EditConnect - Hire Amazing Video Editors for 70% Less",
+    title: "Digital Marketing - Hire Amazing Video Editors for 70% Less",
     description:
       "Connect with vetted video editors from the Philippines. Get high-quality edits at a fraction of the cost of US talent.",
   },

@@ -106,7 +106,7 @@ const Footer = () => {
         </div>
 
         <div className="pt-8 border-t border-white/10 text-center text-white/50">
-          <p>&copy; 2025 EditConnect. All rights reserved.</p>
+          <p>&copy; 2025 Digital Marketing. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -48,7 +48,7 @@ const Header = () => {
         >
           <div className="flex items-center justify-between">
             <div className="text-xl md:text-2xl font-bold text-white">
-              <span className="text-green-400">Edit</span>Connect
+              <span className="text-green-400">Digital {""}</span>Marketing
             </div>
 
             <nav className="hidden lg:flex items-center space-x-8">
@@ -108,7 +108,7 @@ const Header = () => {
 
             <div className="hidden lg:block">
               <button className="gradient-border px-6 py-3  text-sm font-semibold w-fit rounded-xl hover:scale-105 transition-all duration-300 pulse-glow">
-                Apply Now
+                Get a Quote
               </button>
             </div>
 
@@ -187,7 +187,7 @@ const Header = () => {
                   className="gradient-border px-8 py-4 rounded-xl text-lg font-semibold hover:scale-105 transition-all duration-300 pulse-glow"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Apply Now
+                  Get a Quote
                 </button>
               </div>
             </nav>

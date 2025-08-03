@@ -21,16 +21,16 @@ const EditorFast = () => {
                 "We find you the best editor for your video style",
                 "We have 5+ years of experience with overseas talent",
               ],
-              cta: "Start Hiring",
+              cta: "Get a Quote",
             },
             {
               badge: "LOW COST",
               title: "Save over 70%",
               points: [
-                "Use EditConnect instead of entry-level US talent",
+                "Use Digital Marketing instead of entry-level US talent",
                 "Great editors start at $15/hour",
               ],
-              cta: "Start Hiring",
+              cta: "Get a Quote",
             },
             {
               badge: "FAST HIRING",
@@ -39,7 +39,7 @@ const EditorFast = () => {
                 "We find and place your editor within 2 weeks",
                 "We do all the sourcing, screening, and testing for you",
               ],
-              cta: "Start Hiring",
+              cta: "Get a Quote",
             },
           ].map((card, index) => (
             <div

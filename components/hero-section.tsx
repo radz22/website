@@ -49,19 +49,24 @@ const HeroSection = () => {
     >
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
-          Hire Amazing Video Editors
-          <br />
-          <span className="text-[var(--green)] glow-text">for 70% Less</span>
+          Hire Top-Tier Digital Marketers
         </h1>
 
+        <p className="text-5xl md:text-7xl font-black mb-10 mt-5 leading-tight text-[var(--green)] glow-text ">
+          for 70% Less
+        </p>
+
         <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto">
-          Connect with vetted video editors from the Philippines. Get
-          high-quality edits at a fraction of the cost of US talent.
+          Partner with expert digital marketers from the Philippines. Get
+          agency-quality strategy and execution at a fraction of the cost of
+          US-based teams.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
           <button className="gradient-border px-8 py-4 rounded-xl text-lg font-semibold hover:scale-105 transition-all duration-300 pulse-glow">
-            <span className="relative z-10 text-white">Start Hiring</span>
+            <span className="relative z-10 text-white">
+              Let&apos;s Work Together
+            </span>
           </button>
 
           <button className="glassmorphic px-8 py-4 text-lg font-medium rounded-xl hover:bg-white/20 transition-all duration-300 flex items-center gap-2">
@@ -102,8 +107,8 @@ const HeroSection = () => {
         {/* Client Logos */}
         <div className="fade-up">
           <p className="text-white/60 mb-8">
-            EditConnect video editors are perfect for creators, agencies, and
-            startups
+            Digital Marketing video editors are perfect for creators, agencies,
+            and startups
           </p>
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
             {[

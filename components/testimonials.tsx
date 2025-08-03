@@ -18,7 +18,7 @@ const Testimonials = () => {
               role: "YouTube Creator",
               avatar: "SC",
               content:
-                "My editor from EditConnect has transformed my channel. Professional quality edits delivered faster than I ever expected.",
+                "My editor from Digital Marketing has transformed my channel. Professional quality edits delivered faster than I ever expected.",
               rating: 5,
             },
             {

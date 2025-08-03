@@ -44,8 +44,8 @@ const MeetFutureEditor = () => {
             Meet your future video editor
           </h2>
           <p className="text-xl text-white/70 max-w-3xl mx-auto">
-            Scroll through the top 1% of video editors that apply to
-            EditConnect. Your editor will have the skills, expertise, and
+            Scroll through the top 1% of video editors that apply to Digital
+            Marketing. Your editor will have the skills, expertise, and
             creativity to support all your video needs.
           </p>
         </div>
