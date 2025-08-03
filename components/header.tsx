@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
-const useIsMobile = (breakpoint = 768) => {
+const useIsMobile = (breakpoint = 1024) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -10,7 +10,6 @@ const useIsMobile = (breakpoint = 768) => {
       setIsMobile(window.innerWidth <= breakpoint);
     };
 
-    // Set on mount
     handleResize();
 
     window.addEventListener("resize", handleResize);
@@ -43,7 +42,7 @@ const Header = () => {
         <div
           className={`mx-auto px-4 md:px-6 py-4 transition-all duration-300 ${
             isScrolled
-              ? "backdrop-blur-md bg-black/20 border border-white/10 max-w-5xl mt-3 rounded-full shadow-lg "
+              ? "backdrop-blur-md bg-black/20 border border-white/10 max-w-6xl mt-3 rounded-full shadow-lg "
               : "bg-transparent max-w-7xl rounded-full"
           }`}
         >
@@ -52,7 +51,7 @@ const Header = () => {
               <span className="text-green-400">Edit</span>Connect
             </div>
 
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden lg:flex items-center space-x-8">
               <a
                 href="#home"
                 className="text-white hover:text-green-400 transition-colors"
@@ -60,26 +59,54 @@ const Header = () => {
                 Home
               </a>
               <a
-                href="#how-it-works"
+                href=""
                 className="text-white hover:text-green-400 transition-colors"
               >
-                How It Works
+                Services
               </a>
               <a
-                href="#pricing"
+                href=""
+                className="text-white hover:text-green-400 transition-colors"
+              >
+                Portfolio
+              </a>
+              <a
+                href=""
+                className="text-white hover:text-green-400 transition-colors"
+              >
+                Testimonials
+              </a>
+
+              <a
+                href=""
+                className="text-white hover:text-green-400 transition-colors"
+              >
+                Process
+              </a>
+
+              <a
+                href=""
                 className="text-white hover:text-green-400 transition-colors"
               >
                 Pricing
               </a>
+
               <a
                 href="#faq"
                 className="text-white hover:text-green-400 transition-colors"
               >
                 FAQ
               </a>
+
+              <a
+                href=""
+                className="text-white hover:text-green-400 transition-colors"
+              >
+                Contact
+              </a>
             </nav>
 
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <button className="gradient-border px-6 py-3  text-sm font-semibold w-fit rounded-xl hover:scale-105 transition-all duration-300 pulse-glow">
                 Apply Now
               </button>
@@ -87,7 +114,7 @@ const Header = () => {
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
+              className="lg:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
             >
               {isMenuOpen ? (
                 <X className="w-6 h-6" />
@@ -99,7 +126,7 @@ const Header = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden  absolute top-18 w-full left-0 ">
+          <div className="lg:hidden  absolute top-18 w-full left-0 z-50 ">
             <nav className="mx-4 mt-2 backdrop-blur-md bg-black/30 border border-white/10 rounded-lg shadow-xl">
               <div className="flex flex-col p-4 space-y-4">
                 <a
@@ -109,26 +136,52 @@ const Header = () => {
                 >
                   Home
                 </a>
+
                 <a
-                  href="#how-it-works"
+                  href=""
                   className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
-                  onClick={() => setIsMenuOpen(false)}
                 >
-                  How It Works
+                  Services
                 </a>
                 <a
-                  href="#pricing"
+                  href=""
                   className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
-                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Portfolio
+                </a>
+                <a
+                  href=""
+                  className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
+                >
+                  Testimonials
+                </a>
+
+                <a
+                  href=""
+                  className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
+                >
+                  Process
+                </a>
+
+                <a
+                  href=""
+                  className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
                 >
                   Pricing
                 </a>
+
                 <a
                   href="#faq"
                   className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
-                  onClick={() => setIsMenuOpen(false)}
                 >
                   FAQ
+                </a>
+
+                <a
+                  href=""
+                  className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
+                >
+                  Contact
                 </a>
                 <button
                   className="gradient-border px-8 py-4 rounded-xl text-lg font-semibold hover:scale-105 transition-all duration-300 pulse-glow"
