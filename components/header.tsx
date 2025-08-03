@@ -48,7 +48,8 @@ const Header = () => {
         >
           <div className="flex items-center justify-between">
             <div className="text-xl md:text-2xl font-bold text-white">
-              <span className="text-green-400">Digital {""}</span>Marketing
+              <span className="text-primary glow-text">Digital {""}</span>
+              Marketing
             </div>
 
             <nav className="hidden lg:flex items-center space-x-8">
@@ -58,6 +59,14 @@ const Header = () => {
               >
                 Home
               </a>
+
+              <a
+                href=""
+                className="text-white hover:text-green-400 transition-colors"
+              >
+                Portfolio
+              </a>
+
               <a
                 href=""
                 className="text-white hover:text-green-400 transition-colors"
@@ -68,27 +77,7 @@ const Header = () => {
                 href=""
                 className="text-white hover:text-green-400 transition-colors"
               >
-                Portfolio
-              </a>
-              <a
-                href=""
-                className="text-white hover:text-green-400 transition-colors"
-              >
                 Testimonials
-              </a>
-
-              <a
-                href=""
-                className="text-white hover:text-green-400 transition-colors"
-              >
-                Process
-              </a>
-
-              <a
-                href=""
-                className="text-white hover:text-green-400 transition-colors"
-              >
-                Pricing
               </a>
 
               <a
@@ -107,7 +96,7 @@ const Header = () => {
             </nav>
 
             <div className="hidden lg:block">
-              <button className="gradient-border px-6 py-3  text-sm font-semibold w-fit rounded-xl hover:scale-105 transition-all duration-300 pulse-glow">
+              <button className="bg-primary text-black px-6 py-3  text-sm font-semibold w-fit rounded-xl hover:scale-105 transition-all duration-300 ">
                 Get a Quote
               </button>
             </div>

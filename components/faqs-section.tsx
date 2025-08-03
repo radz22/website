@@ -32,8 +32,8 @@ const FaqsSection = () => {
   ];
 
   return (
-    <section id="faq" className="py-24 px-6">
-      <div className="max-w-4xl mx-auto">
+    <section id="faq" className="py-24  px-3">
+      <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16 fade-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">FAQs</h2>
         </div>

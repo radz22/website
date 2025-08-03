@@ -3,8 +3,8 @@ import React from "react";
 
 const WorksSection = () => {
   return (
-    <section id="how-it-works" className="py-24 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section id="how-it-works" className="py-24  px-3">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 fade-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">How It Works</h2>
           <p className="text-xl text-white/70">
@@ -33,8 +33,11 @@ const WorksSection = () => {
                 "Begin your ongoing partnership with your chosen editor. Scale up or down as needed.",
             },
           ].map((step, index) => (
-            <div key={index} className="text-center fade-up group">
-              <div className="w-16 h-16 mx-auto mb-6 glassmorphic rounded-full flex items-center justify-center text-2xl font-bold text-[var(--green)] group-hover:scale-110 transition-transform duration-300">
+            <div
+              key={index}
+              className=" fade-up group text-center glassmorphic p-8 rounded-2xl fade-up group hover:bg-white/15 transition-all duration-500 visible"
+            >
+              <div className="w-16 h-16 mx-auto mb-6 glassmorphic rounded-full flex items-center justify-center text-2xl font-bold text-[var(--highlight-hsl)] group-hover:scale-110 transition-transform duration-300">
                 {step.step}
               </div>
               <h3 className="text-2xl font-bold mb-4">{step.title}</h3>
@@ -44,8 +47,8 @@ const WorksSection = () => {
         </div>
 
         <div className="text-center mt-12 fade-up">
-          <button className="gradient-border px-8 py-4 text-lg font-semibold rounded-xl hover:scale-105 transition-all duration-300 pulse-glow">
-            <span className="relative z-10 text-white flex items-center gap-2">
+          <button className="bg-primary px-8 py-4 text-lg font-semibold rounded-xl hover:scale-105 transition-all duration-300 pulse-glow">
+            <span className="relative z-10 text-black flex items-center gap-2">
               Get Started <ArrowRight className="w-5 h-5" />
             </span>
           </button>

@@ -37,8 +37,8 @@ const MeetFutureEditor = () => {
   ];
 
   return (
-    <section className="py-24 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-24  px-3">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 fade-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Meet your future video editor
@@ -57,14 +57,14 @@ const MeetFutureEditor = () => {
               className="glassmorphic p-6 rounded-2xl fade-up group hover:bg-white/15 transition-all duration-500"
             >
               <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-[var(--green)] rounded-xl flex items-center justify-center text-black font-bold text-xl mr-4">
+                <div className="w-16 h-16 bg-[var(--highlight-hsl)] rounded-xl flex items-center justify-center text-black font-bold text-xl mr-4">
                   {editor.avatar}
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">{editor.name}</h3>
                   <p className="text-white/60">{editor.role}</p>
                   <div className="flex items-center gap-2 mt-1">
-                    <Star className="w-4 h-4 fill-[var(--green)] text-[var(--green)]" />
+                    <Star className="w-4 h-4 fill-[var(--highlight-hsl)] text-[var(--highlight-hsl)]" />
                     <span className="text-sm">
                       {editor.rating} • {editor.projects} projects
                     </span>
@@ -87,8 +87,8 @@ const MeetFutureEditor = () => {
         </div>
 
         <div className="text-center fade-up">
-          <button className="gradient-border px-8 py-4 text-xl font-semibold rounded-xl hover:scale-105 transition-all duration-300 pulse-glow">
-            <span className="relative z-10 text-white">Start Hiring</span>
+          <button className="bg-primary px-8 py-4 text-xl font-semibold rounded-xl hover:scale-105 transition-all duration-300 pulse-glow">
+            <span className="relative z-10 text-black">Get a Quote</span>
           </button>
         </div>
       </div>

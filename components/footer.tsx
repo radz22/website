@@ -2,23 +2,27 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="py-16 px-6 border-t border-white/10">
-      <div className="max-w-6xl mx-auto">
+    <footer className="py-16 px-3 border-t border-white/10">
+      <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="text-2xl font-bold mb-4">
-              <span className="text-[var(--green)]">Edit</span>Connect
+              <span className="text-[var(--highlight-hsl)]  glow-text">
+                Digital{" "}
+              </span>
+              Marketing
             </div>
             <p className="text-white/60 mb-4">
-              Connecting creators with world-class video editors from the
-              Philippines.
+              Connecting businesses with top-tier digital marketing experts from
+              the Philippines.
             </p>
+
             <div className="flex space-x-4">
               {["Twitter", "LinkedIn", "YouTube"].map((social) => (
                 <a
                   key={social}
                   href="#"
-                  className="text-white/60 hover:text-[var(--green)] transition-colors duration-300"
+                  className="text-white/60 hover:text-[var(--highlight-hsl)] transition-colors duration-300"
                 >
                   {social}
                 </a>
