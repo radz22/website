@@ -55,50 +55,53 @@ const Header = () => {
             <nav className="hidden lg:flex items-center space-x-8">
               <a
                 href="#home"
-                className="text-white hover:text-green-400 transition-colors"
+                className="text-white hover:text-[var(--highlight-hsl)] transition-colors"
               >
                 Home
               </a>
 
               <a
-                href=""
-                className="text-white hover:text-green-400 transition-colors"
+                href="#portfolio"
+                className="text-white hover:text-[var(--highlight-hsl)] transition-colors"
               >
                 Portfolio
               </a>
 
               <a
-                href=""
-                className="text-white hover:text-green-400 transition-colors"
+                href="#services"
+                className="text-white hover:text-[var(--highlight-hsl)] transition-colors"
               >
                 Services
               </a>
               <a
-                href=""
-                className="text-white hover:text-green-400 transition-colors"
+                href="#testimonials"
+                className="text-white hover:text-[var(--highlight-hsl)] transition-colors"
               >
                 Testimonials
               </a>
 
               <a
                 href="#faq"
-                className="text-white hover:text-green-400 transition-colors"
+                className="text-white hover:text-[var(--highlight-hsl)] transition-colors"
               >
                 FAQ
               </a>
 
               <a
-                href=""
-                className="text-white hover:text-green-400 transition-colors"
+                href="#contact"
+                className="text-white hover:text-[var(--highlight-hsl)] transition-colors"
               >
                 Contact
               </a>
             </nav>
 
             <div className="hidden lg:block">
-              <button className="bg-primary text-black px-6 py-3  text-sm font-semibold w-fit rounded-xl hover:scale-105 transition-all duration-300 ">
+              <a
+                className="bg-primary text-black px-6 py-3  text-sm font-semibold w-fit rounded-xl hover:scale-105 transition-all duration-300 "
+                href="#contact"
+              >
                 Get a Quote
-              </button>
+              </a>
             </div>
 
             <button
@@ -120,64 +123,57 @@ const Header = () => {
               <div className="flex flex-col p-4 space-y-4">
                 <a
                   href="#home"
-                  className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
+                  className="text-white hover:text-[var(--highlight-hsl)] transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Home
                 </a>
 
                 <a
-                  href=""
-                  className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
+                  href="#portfolio"
+                  className="text-white hover:text-[var(--highlight-hsl)] transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Portfolio
+                </a>
+
+                <a
+                  href="#services"
+                  className="text-white hover:text-[var(--highlight-hsl)] transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Services
                 </a>
                 <a
-                  href=""
-                  className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
-                >
-                  Portfolio
-                </a>
-                <a
-                  href=""
-                  className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
+                  href="#testimonials"
+                  className="text-white hover:text-[var(--highlight-hsl)] transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Testimonials
                 </a>
 
                 <a
-                  href=""
-                  className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
-                >
-                  Process
-                </a>
-
-                <a
-                  href=""
-                  className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
-                >
-                  Pricing
-                </a>
-
-                <a
                   href="#faq"
-                  className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
+                  className="text-white hover:text-[var(--highlight-hsl)] transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   FAQ
                 </a>
 
                 <a
-                  href=""
-                  className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
+                  href="#contact"
+                  className="text-white hover:text-[var(--highlight-hsl)] transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Contact
                 </a>
-                <button
-                  className="gradient-border px-8 py-4 rounded-xl text-lg font-semibold hover:scale-105 transition-all duration-300 pulse-glow"
+                <a
+                  href="#contact"
+                  className="bg-primary text-black px-8 py-4 rounded-xl text-lg font-semibold hover:scale-105 transition-all duration-300 pulse-glow"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Get a Quote
-                </button>
+                </a>
               </div>
             </nav>
           </div>

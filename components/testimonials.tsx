@@ -103,7 +103,7 @@ const Testimonials = () => {
     return () => intervals.forEach(clearInterval);
   }, [isInView]);
   return (
-    <section className="py-24  px-3">
+    <section className="py-24  px-3" id="testimonials">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 fade-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
