@@ -1,6 +1,5 @@
 "use client";
-
-import { useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Header from "@/components/header";
 import HeroSection from "@/components/hero-section";
 import VideoSection from "@/components/video-section";
@@ -15,8 +14,21 @@ import BrandSection from "@/components/brand-section";
 import PortfolioSection from "@/components/portfolio";
 import ServicesSection from "@/components/services";
 import ContactSection from "@/components/contact-us";
+import FastMetallicMarketingLoader from "@/components/loading-screen";
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+  const observerRef = useRef<IntersectionObserver | null>(null);
+
   useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (loading) return;
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -25,16 +37,28 @@ export default function Home() {
       });
     };
 
-    const observer = new IntersectionObserver(observerCallback, {
+    observerRef.current = new IntersectionObserver(observerCallback, {
       threshold: 0.1,
+      rootMargin: "50px 0px",
     });
 
-    document.querySelectorAll(".fade-up").forEach((el) => {
-      observer.observe(el);
-    });
+    const elementsToObserve = document.querySelectorAll(".fade-up");
+    if (elementsToObserve.length > 0) {
+      elementsToObserve.forEach((el) => {
+        observerRef.current?.observe(el);
+      });
+    }
 
-    return () => observer.disconnect();
-  }, []);
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect();
+        observerRef.current = null;
+      }
+    };
+  }, [loading]);
+  if (loading) {
+    return <FastMetallicMarketingLoader />;
+  }
 
   return (
     <main className="min-h-screen text-white">

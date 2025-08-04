@@ -119,6 +119,12 @@
   body {
     @apply bg-background text-foreground;
     background: #010101;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.08) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 60px 60px; /* Adjust grid spacing here */
     min-height: 100vh;
     font-family: "Satoshi", sans-serif;
   }

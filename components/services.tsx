@@ -120,7 +120,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 fade-up">
           {services.map((service, index) => (
             <div
               key={service.title}
@@ -193,7 +193,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
+        <div className="text-center mt-16 ">
           <div className="glassmorphic p-8 rounded-3xl fade-up relative visible ">
             <h3 className="text-2xl font-bold mb-4 ">
               Need a <span className="text-primary">Custom Package</span>?

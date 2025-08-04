@@ -126,9 +126,8 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="py-20 px-3">
-      <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
-        <div className="text-center mb-16 fade-up">
+      <div className="max-w-7xl mx-auto ">
+        <div className="text-center mb-1 fade-up">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6  font-melodrama">
             Let&apos;s Create Something{" "}
             <span className="text-primary">Impactful</span>
@@ -140,7 +139,7 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 fade-up mt-10">
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <div className="glassmorphic p-8 rounded-lg fade-up relative visible">

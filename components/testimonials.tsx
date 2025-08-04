@@ -111,7 +111,7 @@ const Testimonials = () => {
           </h2>
         </div>
 
-        <div className="relative  mx-auto mb-12 h-auto ">
+        <div className="relative  mx-auto mb-12 h-auto fade-up">
           <div className="p-8 md:p-12 relative overflow-hidden  h-auto glassmorphic rounded-2xl fade-up group hover:bg-white/15 transition-all duration-500 visible  ">
             {/* Quote Icon */}
             <div className="absolute top-6 right-6 opacity-10">
@@ -192,7 +192,10 @@ const Testimonials = () => {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12" ref={ref}>
+        <div
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 fade-up"
+          ref={ref}
+        >
           <div className="glassmorphic p-8 rounded-2xl fade-up group hover:bg-white/15 transition-all duration-500 visible text-center">
             <div className="text-3xl font-bold text-primary mb-2 flex items-center justify-center">
               <SlidingNumber value={clientSatisfaction} />%
@@ -215,7 +218,7 @@ const Testimonials = () => {
         </div>
 
         {/* CTA */}
-        <div className="text-center">
+        <div className="text-center fade-up">
           <div className="glassmorphic p-8 rounded-2xl fade-up group hover:bg-white/15 transition-all duration-500 visible text-center">
             <h3 className="text-2xl font-bold mb-4">
               Ready to Be Our Next{" "}

@@ -87,7 +87,7 @@ const PortfolioSection = () => {
     <section id="portfolio" className="py-20 px-3">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-16 fade-up">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 font-melodrama">
             Featured <span className="text-primary">Portfolio</span>
           </h2>
@@ -99,7 +99,7 @@ const PortfolioSection = () => {
         </div>
 
         {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12 animate-slide-in-left">
+        <div className="flex flex-wrap justify-center gap-3 mb-12 fade-up">
           {categories.map((category) => (
             <Button
               key={category.id}
@@ -119,7 +119,7 @@ const PortfolioSection = () => {
         </div>
 
         {/* Portfolio Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 fade-up">
           {filteredItems.map((item, index) => (
             <div
               key={item.id}
@@ -191,17 +191,6 @@ const PortfolioSection = () => {
             </div>
           ))}
         </div>
-
-        {/* Load More Button */}
-        {/* <div className="text-center mt-12">
-          <Button
-            size="lg"
-            variant="outline"
-            className="hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-          >
-            Load More Projects
-          </Button>
-        </div> */}
       </div>
     </section>
   );

@@ -48,8 +48,7 @@ const Header = () => {
         >
           <div className="flex items-center justify-between">
             <div className="text-xl md:text-2xl font-bold text-white">
-              <span className="text-primary glow-text ">Digital {""}</span>
-              Marketing
+              <span className="text-primary glow-text  ">NEXUS</span>
             </div>
 
             <nav className="hidden lg:flex items-center space-x-8">

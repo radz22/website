@@ -8,9 +8,8 @@ const Footer = () => {
           <div>
             <div className="text-2xl font-bold mb-4">
               <span className="text-[var(--highlight-hsl)]  glow-text">
-                Digital{" "}
+                NEXUS
               </span>
-              Marketing
             </div>
             <p className="text-white/60 mb-4">
               Connecting businesses with top-tier digital marketing experts from
@@ -110,7 +109,7 @@ const Footer = () => {
         </div>
 
         <div className="pt-8 border-t border-white/10 text-center text-white/50">
-          <p>&copy; 2025 Digital Marketing. All rights reserved.</p>
+          <p>&copy; 2025 NEXUS. All rights reserved.</p>
         </div>
       </div>
     </footer>
