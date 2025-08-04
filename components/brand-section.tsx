@@ -39,15 +39,15 @@ const BrandSection = () => {
         <h2 className="text-2xl md:text-3xl font-melodrama font-bold  mb-8">
           Trusted by brands worldwide
         </h2>
-        <Marquee className="glassmorphic p-4 rounded-2xl h-auto ">
+        <Marquee className="h-auto">
           <MarqueeContent>
             {BrandLogo.map((logo) => (
-              <MarqueeItem key={logo.id} className="">
+              <MarqueeItem key={logo.id} className="h-auto">
                 <Image
                   width={100}
                   height={100}
                   alt={logo.alt}
-                  className="overflow-hidden rounded-full max-sm:h-16 max-sm:w-16 "
+                  className="overflow-hidden rounded-full max-sm:h-16 max-sm:w-16 cursor-pointer transition-all duration-300 "
                   src={logo.src}
                 />
               </MarqueeItem>
