@@ -58,6 +58,10 @@ module.exports = {
           5: "hsl(var(--chart-5))",
         },
       },
+      fontFamily: {
+        satoshi: ["Satoshi", "sans-serif"],
+        melodrama: ["Melodrama", "serif"],
+      },
     },
   },
   // eslint-disable-next-line @typescript-eslint/no-require-imports

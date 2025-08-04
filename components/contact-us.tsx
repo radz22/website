@@ -129,7 +129,7 @@ const ContactSection = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 fade-up">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6  font-melodrama">
             Let&apos;s Create Something{" "}
             <span className="text-primary">Impactful</span>
           </h2>
@@ -298,7 +298,7 @@ const ContactSection = () => {
           <div className="space-y-8">
             {/* Contact Information */}
             <div className=" p-6 glassmorphic  fade-up relative visible rounded-lg">
-              <h3 className="text-xl font-semibold mb-6">
+              <h3 className="text-xl font-semibold mb-6 ">
                 Contact Information
               </h3>
               <div className="space-y-4">

@@ -48,7 +48,7 @@ const Header = () => {
         >
           <div className="flex items-center justify-between">
             <div className="text-xl md:text-2xl font-bold text-white">
-              <span className="text-primary glow-text">Digital {""}</span>
+              <span className="text-primary glow-text ">Digital {""}</span>
               Marketing
             </div>
 
@@ -97,7 +97,7 @@ const Header = () => {
 
             <div className="hidden lg:block">
               <a
-                className="bg-primary text-black px-6 py-3  text-sm font-semibold w-fit rounded-xl hover:scale-105 transition-all duration-300 "
+                className="bg-primary text-black px-6 py-3  text-sm font-semibold w-fit rounded-xl hover:scale-105 transition-all duration-300  "
                 href="#contact"
               >
                 Get a Quote

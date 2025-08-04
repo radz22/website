@@ -48,15 +48,15 @@ const HeroSection = () => {
       className="md:pt-28 max-md:pt-8 min-h-screen flex items-center justify-center px-3 "
     >
       <div className="max-w-7xl mx-auto text-center">
-        <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
+        <h1 className="text-5xl md:text-7xl  leading-tight font-bold  font-melodrama ">
           Hire Top-Tier Digital Marketers
         </h1>
 
-        <p className="text-5xl md:text-7xl font-black mb-10 mt-5 leading-tight text-primary glow-text ">
+        <p className="text-5xl md:text-7xl mb-6 mt-1 leading-tight text-primary glow-text font-bold font-melodrama ">
           for 70% Less
         </p>
 
-        <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto">
+        <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto  ">
           Partner with expert digital marketers from the Philippines. Get
           agency-quality strategy and execution at a fraction of the cost of
           US-based teams.
@@ -77,7 +77,7 @@ const HeroSection = () => {
 
         {/* Who Are You Section */}
         <div className="fade-up mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8 decoration-[var(--highlight-hsl)] decoration-2 underline underline-offset-8">
+          <h2 className="text-2xl md:text-3xl  mb-8 decoration-[var(--highlight-hsl)] decoration-2 underline underline-offset-8 font-melodrama font-bold">
             Who are you?
           </h2>
           <p className="text-white/60 mb-8">Click on a person 👇</p>

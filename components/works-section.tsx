@@ -6,7 +6,9 @@ const WorksSection = () => {
     <section id="how-it-works" className="py-24  px-3">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">How It Works</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-melodrama">
+            How It <span className="text-primary">Works</span>
+          </h2>
           <p className="text-xl text-white/70">
             Get matched with your perfect editor in 3 simple steps
           </p>
@@ -40,7 +42,9 @@ const WorksSection = () => {
               <div className="w-16 h-16 mx-auto mb-6 glassmorphic rounded-full flex items-center justify-center text-2xl font-bold text-[var(--highlight-hsl)] group-hover:scale-110 transition-transform duration-300">
                 {step.step}
               </div>
-              <h3 className="text-2xl font-bold mb-4">{step.title}</h3>
+              <h3 className="text-2xl font-bold mb-4 font-melodrama">
+                {step.title}
+              </h3>
               <p className="text-white/70">{step.description}</p>
             </div>
           ))}

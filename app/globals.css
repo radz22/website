@@ -118,20 +118,9 @@
 
   body {
     @apply bg-background text-foreground;
-    background: linear-gradient(
-      90deg,
-      #1e0505 0%,
-      #240d00 12.5%,
-      #241f00 25%,
-      #0d1e05 37.5%,
-      #05191e 50%,
-      #050e1e 62.5%,
-      #050a1e 75%,
-      #13051e 87.5%,
-      #1e051e 100%
-    );
+    background: #010101;
     min-height: 100vh;
-    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-family: "Satoshi", sans-serif;
   }
 
   html {
