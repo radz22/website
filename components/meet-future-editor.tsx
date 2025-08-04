@@ -7,7 +7,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Card, CardContent } from "./ui/card";
 const MeetFutureEditor = () => {
   const editors = [
     {
@@ -74,44 +73,6 @@ const MeetFutureEditor = () => {
             creativity to support all your video needs.
           </p>
         </div>
-
-        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {editors.map((editor, index) => (
-            <div
-              key={index}
-              className="glassmorphic p-6 rounded-2xl fade-up group hover:bg-white/15 transition-all duration-500"
-            >
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-[var(--highlight-hsl)] rounded-xl flex items-center justify-center text-black font-bold text-xl mr-4">
-                  {editor.avatar}
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold">{editor.name}</h3>
-                  <p className="text-white/60">{editor.role}</p>
-                  <div className="flex items-center gap-2 mt-1">
-                    <Star className="w-4 h-4 fill-[var(--highlight-hsl)] text-[var(--highlight-hsl)]" />
-                    <span className="text-sm">
-                      {editor.rating} • {editor.projects} projects
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-wrap gap-2">
-                {editor.skills.map((skill, i) => (
-                  <span
-                    key={i}
-                    className="px-3 py-1 bg-white/10 rounded-full text-xs"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
-
-        
-        </div> */}
 
         <Carousel className="w-full mb-12">
           <CarouselContent className="-ml-1">
