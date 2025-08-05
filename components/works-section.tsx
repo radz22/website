@@ -14,7 +14,7 @@ const WorksSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 fade-up">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 fade-up">
           {[
             {
               step: "1",
