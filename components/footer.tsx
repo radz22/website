@@ -33,22 +33,34 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">For Creators</h4>
             <ul className="space-y-2 text-white/60">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a
+                  href="#how-it-works"
+                  className="hover:text-white transition-colors"
+                >
                   How It Works
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a
+                  href="#services"
+                  className="hover:text-white transition-colors"
+                >
                   Pricing
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a
+                  href="#portfolio"
+                  className="hover:text-white transition-colors"
+                >
                   Sample Work
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a
+                  href="#contact"
+                  className="hover:text-white transition-colors"
+                >
                   Get Started
                 </a>
               </li>
@@ -56,26 +68,48 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">For Editors</h4>
+            <h4 className="font-semibold mb-4">Navigation</h4>
             <ul className="space-y-2 text-white/60">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Apply Now
+                <a href="#home" className="hover:text-white transition-colors">
+                  Home
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Requirements
+                <a
+                  href="#portfolio"
+                  className="hover:text-white transition-colors"
+                >
+                  Portfolio
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Success Stories
+                <a
+                  href="#services"
+                  className="hover:text-white transition-colors"
+                >
+                  Services
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Editor Portal
+                <a
+                  href="#testimonials"
+                  className="hover:text-white transition-colors"
+                >
+                  Testimonials
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="hover:text-white transition-colors">
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  className="hover:text-white transition-colors"
+                >
+                  Contact
                 </a>
               </li>
             </ul>
@@ -85,23 +119,16 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Support</h4>
             <ul className="space-y-2 text-white/60">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a href="#faq" className="hover:text-white transition-colors">
                   FAQ
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a
+                  href="#contact"
+                  className="hover:text-white transition-colors"
+                >
                   Contact
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Help Center
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Privacy Policy
                 </a>
               </li>
             </ul>
