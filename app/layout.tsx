@@ -47,11 +47,6 @@ export default function RootLayout({
           href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,401,700,701&display=swap"
           rel="stylesheet"
         />
-
-        <link
-          href="https://api.fontshare.com/v2/css?f[]=melodrama@400,500,600,700&display=swap"
-          rel="stylesheet"
-        ></link>
       </head>
       <body suppressHydrationWarning>
         <ClientBody>{children}</ClientBody>

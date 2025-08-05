@@ -190,7 +190,7 @@ const FastMetallicMarketingLoader: React.FC = () => {
               letterSpacing: "-0.01em",
             }}
           >
-            <span className="text-primary font-melodrama glow-text">NEXUS</span>
+            <span className="text-primary font-playwrite glow-text">NEXUS</span>
           </h1>
           <p className="text-zinc-400 text-base font-light tracking-wide uppercase">
             Digital Marketing Engine

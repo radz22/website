@@ -35,7 +35,7 @@ const FaqsSection = () => {
     <section id="faq" className="py-24  px-3">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16 fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6  font-melodrama">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-playwrite">
             FAQs
           </h2>
         </div>
@@ -50,9 +50,7 @@ const FaqsSection = () => {
                 onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
                 className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-white/10 transition-colors"
               >
-                <span className="font-semibold text-lg  font-melodrama">
-                  {faq.question}
-                </span>
+                <span className="font-semibold text-lg  ">{faq.question}</span>
                 <Plus
                   className={`w-6 h-6 transition-transform duration-300 ${
                     openFAQ === index ? "rotate-45" : ""

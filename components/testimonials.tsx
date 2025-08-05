@@ -106,7 +106,7 @@ const Testimonials = () => {
     <section className="py-24  px-3" id="testimonials">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6  font-melodrama">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6  font-playwrite">
             What Our Clients Say
           </h2>
         </div>
@@ -220,7 +220,7 @@ const Testimonials = () => {
         {/* CTA */}
         <div className="text-center fade-up">
           <div className="glassmorphic p-8 rounded-2xl fade-up group hover:bg-white/15 transition-all duration-500 visible text-center">
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-2xl font-bold mb-4 font-playwrite">
               Ready to Be Our Next{" "}
               <span className="text-primary">Success Story?</span>
             </h3>

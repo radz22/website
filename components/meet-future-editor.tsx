@@ -64,7 +64,7 @@ const MeetFutureEditor = () => {
     <section className="py-24  px-3">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6  font-melodrama">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6  font-playwrite">
             Meet your future video editor
           </h2>
           <p className="text-xl text-white/70 max-w-3xl mx-auto">

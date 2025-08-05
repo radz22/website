@@ -60,7 +60,7 @@ module.exports = {
       },
       fontFamily: {
         satoshi: ["Satoshi", "sans-serif"],
-        melodrama: ["Melodrama", "serif"],
+        playwrite: ['"Playwrite AU NSW"', "cursive"],
       },
     },
   },
