@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="text-2xl font-bold mb-4">
-              <span className="text-[var(--highlight-hsl)]  glow-text font-playwrite">
+              <span className="text-[var(--highlight-hsl)]  glow-text font-akrobat">
                 NEXUS
               </span>
             </div>

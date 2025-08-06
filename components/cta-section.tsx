@@ -5,7 +5,7 @@ const CtaSection = () => {
     <section className="py-24  px-3">
       <div className="max-w-5xl mx-auto text-center fade-up">
         <div className="glassmorphic p-12 rounded-3xl">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6  font-playwrite">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-akrobat">
             Ready to grow your business?
           </h2>
           <p className="text-xl text-white/70 mb-10 max-w-2xl mx-auto">

@@ -36,7 +36,7 @@ const BrandSection = () => {
   return (
     <div className="max-w-7xl mx-auto text-center pt-24 px-3 ">
       <div className="fade-up mb-16">
-        <h2 className="text-2xl md:text-3xl font-playwrite font-bold  mb-8">
+        <h2 className="text-2xl md:text-3xl font-akrobat font-bold  mb-8">
           Trusted by brands worldwide
         </h2>
         <Marquee className="h-auto">

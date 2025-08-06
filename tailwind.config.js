@@ -61,6 +61,7 @@ module.exports = {
       fontFamily: {
         satoshi: ["Satoshi", "sans-serif"],
         playwrite: ['"Playwrite AU NSW"', "cursive"],
+        akrobat: ["Akrobat", "sans-serif"],
       },
     },
   },

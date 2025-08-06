@@ -88,7 +88,7 @@ const PortfolioSection = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 fade-up">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 font-playwrite">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 font-akrobat">
             Featured <span className="text-primary">Portfolio</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
@@ -146,7 +146,7 @@ const PortfolioSection = () => {
               {/* Content */}
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors font-playwrite">
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors font-akrobat">
                     {item.title}
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">

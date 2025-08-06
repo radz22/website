@@ -6,7 +6,7 @@ const EditorFast = () => {
     <section className="py-24  px-3">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6  font-playwrite">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-akrobat">
             We <span className="text-[var(--highlight-hsl)]">place</span> great
             editors FAST
           </h2>
@@ -49,7 +49,7 @@ const EditorFast = () => {
               <div className="inline-block px-3 py-1 bg-[var(--highlight-hsl)]/20 text-[var(--highlight-hsl)] text-sm font-semibold rounded-full mb-6">
                 {card.badge}
               </div>
-              <h3 className="text-3xl font-bold mb-6  font-playwrite">
+              <h3 className="text-3xl font-bold mb-6 font-akrobat">
                 {card.title}
               </h3>
               <ul className="space-y-4 mb-8">

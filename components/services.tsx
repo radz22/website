@@ -109,7 +109,7 @@ const ServicesSection = () => {
     <section id="services" className="py-20  px-3">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 fade-up">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 font-playwrite">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 font-akrobat">
             Digital Marketing <span className="text-primary">Services</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -143,7 +143,7 @@ const ServicesSection = () => {
                 <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <service.icon className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors font-playwrite">
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors font-akrobat">
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
@@ -195,7 +195,7 @@ const ServicesSection = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16 ">
           <div className="glassmorphic p-8 rounded-3xl fade-up relative visible ">
-            <h3 className="text-2xl font-bold mb-4 font-playwrite">
+            <h3 className="text-2xl font-bold mb-4 font-akrobat">
               Need a <span className="text-primary">Custom Package</span>?
             </h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">

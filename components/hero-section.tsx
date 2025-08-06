@@ -48,11 +48,11 @@ const HeroSection = () => {
       className="md:pt-28 max-md:pt-8 min-h-screen flex items-center justify-center px-3 "
     >
       <div className="max-w-7xl mx-auto text-center">
-        <h1 className="text-5xl md:text-7xl  leading-tight font-bold  font-playwrite ">
+        <h1 className="text-5xl md:text-7xl  leading-tight font-bold  font-akrobat ">
           Hire Top-Tier Digital Marketers
         </h1>
 
-        <p className="text-5xl md:text-7xl mb-6 mt-1 leading-tight text-primary glow-text font-bold font-playwrite ">
+        <p className="text-5xl md:text-7xl mb-6 mt-1 leading-tight text-primary glow-text font-bold font-akrobat ">
           for 70% Less
         </p>
 
@@ -77,7 +77,7 @@ const HeroSection = () => {
 
         {/* Who Are You Section */}
         <div className="fade-up mb-16">
-          <h2 className="text-2xl md:text-3xl  mb-8 decoration-[var(--highlight-hsl)] decoration-2 underline underline-offset-8 font-playwrite font-bold">
+          <h2 className="text-2xl md:text-3xl  mb-8 decoration-[var(--highlight-hsl)] decoration-2 underline underline-offset-8 e font-akrobat  font-bold">
             Who are you?
           </h2>
           <p className="text-white/60 mb-8">Click on a person 👇</p>

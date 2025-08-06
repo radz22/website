@@ -112,6 +112,20 @@
   }
 }
 
+@font-face {
+  font-family: "Akrobat";
+  src: url("/fonts/Akrobat-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akrobat";
+  src: url("/fonts/Akrobat-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 @layer base {
   * {
     @apply border-border;

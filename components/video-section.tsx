@@ -19,7 +19,7 @@ const VideoSection = () => {
     <section className="pt-24  px-3">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-playwrite">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-akrobat">
             To make videos like these:
           </h2>
         </div>
