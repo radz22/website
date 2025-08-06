@@ -48,11 +48,11 @@ const HeroSection = () => {
       className="md:pt-28 max-md:pt-8 min-h-screen flex items-center justify-center px-3 "
     >
       <div className="max-w-7xl mx-auto text-center">
-        <h1 className="text-5xl md:text-7xl  leading-tight font-bold  font-akrobat ">
+        <h1 className="text-5xl md:text-8xl	  leading-tight font-bold  font-akrobat ">
           Hire Top-Tier Digital Marketers
         </h1>
 
-        <p className="text-5xl md:text-7xl mb-6 mt-1 leading-tight text-primary glow-text font-bold font-akrobat ">
+        <p className="text-5xl md:text-8xl	mb-6 mt-1 leading-tight text-primary glow-text font-bold font-akrobat ">
           for 70% Less
         </p>
 
