@@ -7,7 +7,6 @@ import EditorFast from "@/components/editor-fast";
 import MeetFutureEditor from "@/components/meet-future-editor";
 import WorksSection from "@/components/works-section";
 import FaqsSection from "@/components/faqs-section";
-import Testimonials from "@/components/testimonials";
 import CtaSection from "@/components/cta-section";
 import Footer from "@/components/footer";
 import BrandSection from "@/components/brand-section";
@@ -15,6 +14,7 @@ import PortfolioSection from "@/components/portfolio";
 import ServicesSection from "@/components/services";
 import ContactSection from "@/components/contact-us";
 import FastMetallicMarketingLoader from "@/components/loading-screen";
+import { Testimonials2 } from "@/components/testimonial-2";
 export default function Home() {
   const [loading, setLoading] = useState(true);
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -71,7 +71,7 @@ export default function Home() {
       <ServicesSection />
       <WorksSection />
       <EditorFast />
-      <Testimonials />
+      <Testimonials2 />
       <FaqsSection />
       <CtaSection />
       <ContactSection />
