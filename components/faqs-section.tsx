@@ -5,29 +5,29 @@ const FaqsSection = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
   const faqs = [
     {
-      question: "How much does this cost?",
+      question: "How much do your digital marketing services cost?",
       answer:
-        "Our editors start at $15/hour, which is 70% less than equivalent US talent. We offer flexible pricing based on your needs and project complexity.",
+        "Our digital marketing packages start at $200/month for essential services like social media management, SEO, and content creation. Pricing depends on your goals, channels, and campaign complexity.",
     },
     {
-      question: "Why hire editors from the Philippines?",
+      question: "Why outsource digital marketing to the Philippines?",
       answer:
-        "The Philippines has a large pool of talented, English-speaking video editors with strong technical skills and cultural alignment with Western content styles. Plus, the time zone difference means work gets done while you sleep.",
+        "The Philippines has a strong pool of skilled, English-speaking digital marketers experienced in SEO, social media, content strategy, and paid advertising. They offer high-quality work at competitive rates, with strong cultural alignment for Western markets.",
     },
     {
-      question: "Will my video editor only work for me?",
+      question: "Will I have a dedicated marketing specialist?",
       answer:
-        "We offer both dedicated and shared editor options. Dedicated editors work exclusively on your projects, while shared editors work with multiple clients but maintain consistent quality and turnaround times.",
+        "Yes, you can choose between a dedicated marketing specialist who works solely on your campaigns or a shared team that handles multiple clients but delivers consistent quality and timely results.",
     },
     {
-      question: "What about the time difference?",
+      question: "How do you handle time zone differences?",
       answer:
-        "The time difference is actually an advantage! Your editor works while you sleep, so you wake up to completed projects. We also provide overlap hours for real-time communication when needed.",
+        "The time zone difference works to your advantage! We work while you sleep, so you wake up to progress updates and completed tasks. We also schedule overlap hours for live communication when needed.",
     },
     {
-      question: "How many videos can my editor make?",
+      question: "How much work can your team handle per month?",
       answer:
-        "It depends on complexity, but most editors can handle 10-20 short-form videos per week or 2-4 long-form videos. We match editors based on your specific volume and timeline requirements.",
+        "It depends on your package and campaign needs, but most clients receive 8–12 high-quality content pieces, 15–30 optimized social posts, and ongoing SEO improvements each month. We customize workloads based on your marketing goals.",
     },
   ];
 
