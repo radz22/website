@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
-const useIsMobile = (breakpoint = 768) => {
+const useIsMobile = (breakpoint = 1024) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -10,7 +10,6 @@ const useIsMobile = (breakpoint = 768) => {
       setIsMobile(window.innerWidth <= breakpoint);
     };
 
-    // Set on mount
     handleResize();
 
     window.addEventListener("resize", handleResize);
@@ -43,51 +42,72 @@ const Header = () => {
         <div
           className={`mx-auto px-4 md:px-6 py-4 transition-all duration-300 ${
             isScrolled
-              ? "backdrop-blur-md bg-black/20 border border-white/10 max-w-5xl mt-3 rounded-full shadow-lg "
+              ? "backdrop-blur-md bg-black/20 border border-white/10 max-w-6xl mt-3 rounded-full shadow-lg "
               : "bg-transparent max-w-7xl rounded-full"
           }`}
         >
           <div className="flex items-center justify-between">
             <div className="text-xl md:text-2xl font-bold text-white">
-              <span className="text-green-400">Edit</span>Connect
+              <span className="text-primary glow-text font-akrobat ">
+                NEXUS
+              </span>
             </div>
 
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden lg:flex items-center space-x-8">
               <a
                 href="#home"
-                className="text-white hover:text-green-400 transition-colors"
+                className="text-white hover:text-[var(--highlight-hsl)] transition-colors"
               >
                 Home
               </a>
+
               <a
-                href="#how-it-works"
-                className="text-white hover:text-green-400 transition-colors"
+                href="#portfolio"
+                className="text-white hover:text-[var(--highlight-hsl)] transition-colors"
               >
-                How It Works
+                Portfolio
+              </a>
+
+              <a
+                href="#services"
+                className="text-white hover:text-[var(--highlight-hsl)] transition-colors"
+              >
+                Services
               </a>
               <a
-                href="#pricing"
-                className="text-white hover:text-green-400 transition-colors"
+                href="#testimonials"
+                className="text-white hover:text-[var(--highlight-hsl)] transition-colors"
               >
-                Pricing
+                Testimonials
               </a>
+
               <a
                 href="#faq"
-                className="text-white hover:text-green-400 transition-colors"
+                className="text-white hover:text-[var(--highlight-hsl)] transition-colors"
               >
                 FAQ
               </a>
+
+              <a
+                href="#contact"
+                className="text-white hover:text-[var(--highlight-hsl)] transition-colors"
+              >
+                Contact
+              </a>
             </nav>
 
-            <div className="hidden md:block">
-              <button className="gradient-border px-6 py-3  text-sm font-semibold w-fit rounded-xl hover:scale-105 transition-all duration-300 pulse-glow">
-                Apply Now
-              </button>
+            <div className="hidden lg:block">
+              <a
+                className="bg-primary text-black px-6 py-3  text-sm font-semibold w-fit rounded-xl hover:scale-105 transition-all duration-300  "
+                href="#contact"
+              >
+                Get a Quote
+              </a>
             </div>
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
+              className="lg:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
             >
               {isMenuOpen ? (
                 <X className="w-6 h-6" />
@@ -99,43 +119,62 @@ const Header = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden  absolute top-18 w-full left-0 ">
+          <div className="lg:hidden  absolute top-18 w-full left-0 z-50 ">
             <nav className="mx-4 mt-2 backdrop-blur-md bg-black/30 border border-white/10 rounded-lg shadow-xl">
               <div className="flex flex-col p-4 space-y-4">
                 <a
                   href="#home"
-                  className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
+                  className="text-white hover:text-[var(--highlight-hsl)] transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Home
                 </a>
+
                 <a
-                  href="#how-it-works"
-                  className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
+                  href="#portfolio"
+                  className="text-white hover:text-[var(--highlight-hsl)] transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  How It Works
+                  Portfolio
                 </a>
+
                 <a
-                  href="#pricing"
-                  className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
+                  href="#services"
+                  className="text-white hover:text-[var(--highlight-hsl)] transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Pricing
+                  Services
                 </a>
+                <a
+                  href="#testimonials"
+                  className="text-white hover:text-[var(--highlight-hsl)] transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Testimonials
+                </a>
+
                 <a
                   href="#faq"
-                  className="text-white hover:text-green-400 transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
+                  className="text-white hover:text-[var(--highlight-hsl)] transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   FAQ
                 </a>
-                <button
-                  className="gradient-border px-8 py-4 rounded-xl text-lg font-semibold hover:scale-105 transition-all duration-300 pulse-glow"
+
+                <a
+                  href="#contact"
+                  className="text-white hover:text-[var(--highlight-hsl)] transition-colors py-2 px-3 hover:bg-white/10 rounded-lg"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Apply Now
-                </button>
+                  Contact
+                </a>
+                <a
+                  href="#contact"
+                  className="bg-primary text-black px-8 py-4 rounded-xl text-lg font-semibold hover:scale-105 transition-all duration-300 pulse-glow"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Get a Quote
+                </a>
               </div>
             </nav>
           </div>

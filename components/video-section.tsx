@@ -16,10 +16,10 @@ const VideoSection = () => {
   const [activeVideoType, setActiveVideoType] =
     useState<keyof typeof videoTypes>("ads");
   return (
-    <section className="py-24 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section className="pt-24  px-3">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-akrobat">
             To make videos like these:
           </h2>
         </div>
@@ -37,7 +37,7 @@ const VideoSection = () => {
                 onClick={() => setActiveVideoType(key)}
                 className={`px-6 py-3 rounded-xl font-medium transition-all duration-300 ${
                   activeVideoType === key
-                    ? "bg-[var(--green)] text-black"
+                    ? "bg-[var(--highlight-hsl)] text-black"
                     : "glassmorphic text-white hover:bg-white/20"
                 }`}
               >
@@ -47,11 +47,12 @@ const VideoSection = () => {
           </div>
 
           {/* Video Preview */}
-          <div className="relative aspect-video bg-gradient-to-br from-blue-900/20 to-purple-900/20 rounded-2xl overflow-hidden">
+          <div className="relative w-full aspect-video bg-muted rounded-2xl overflow-hidden">
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-20 h-20 mx-auto mb-4 bg-white/10 rounded-full flex items-center justify-center">
-                  <Play className="w-8 h-8 text-white" />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
+              <div className="absolute inset-0 flex items-center justify-center flex-col gap-3">
+                <div className="w-16 h-16 bg-primary/90 hover:bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-primary">
+                  <Play className="w-8 h-8 text-primary-foreground ml-1" />
                 </div>
                 <p className="text-white/80">
                   {videoTypes[activeVideoType].title} Sample

@@ -32,10 +32,12 @@ const FaqsSection = () => {
   ];
 
   return (
-    <section id="faq" className="py-24 px-6">
-      <div className="max-w-4xl mx-auto">
+    <section id="faq" className="py-24  px-3">
+      <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16 fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">FAQs</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-akrobat">
+            FAQs
+          </h2>
         </div>
 
         <div className="space-y-4">
@@ -48,7 +50,7 @@ const FaqsSection = () => {
                 onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
                 className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-white/10 transition-colors"
               >
-                <span className="font-semibold text-lg">{faq.question}</span>
+                <span className="font-semibold text-lg  ">{faq.question}</span>
                 <Plus
                   className={`w-6 h-6 transition-transform duration-300 ${
                     openFAQ === index ? "rotate-45" : ""
@@ -60,12 +62,6 @@ const FaqsSection = () => {
               )}
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12 fade-up">
-          <button className="glassmorphic px-8 py-4 rounded-xl hover:bg-white/20 transition-all duration-300">
-            See more
-          </button>
         </div>
       </div>
     </section>

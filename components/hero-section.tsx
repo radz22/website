@@ -45,23 +45,28 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="md:pt-28 max-md:pt-8 min-h-screen flex items-center justify-center px-6 "
+      className="md:pt-28 max-md:pt-8 min-h-screen flex items-center justify-center px-3 "
     >
-      <div className="max-w-6xl mx-auto text-center">
-        <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
-          Hire Amazing Video Editors
-          <br />
-          <span className="text-[var(--green)] glow-text">for 70% Less</span>
+      <div className="max-w-7xl mx-auto text-center">
+        <h1 className="text-5xl md:text-8xl	  leading-tight font-bold  font-akrobat ">
+          Hire Top-Tier Digital Marketers
         </h1>
 
-        <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto">
-          Connect with vetted video editors from the Philippines. Get
-          high-quality edits at a fraction of the cost of US talent.
+        <p className="text-5xl md:text-8xl	mb-6 mt-1 leading-tight text-primary glow-text font-bold font-akrobat ">
+          for 70% Less
+        </p>
+
+        <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto  ">
+          Partner with expert digital marketers from the Philippines. Get
+          agency-quality strategy and execution at a fraction of the cost of
+          US-based teams.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-          <button className="gradient-border px-8 py-4 rounded-xl text-lg font-semibold hover:scale-105 transition-all duration-300 pulse-glow">
-            <span className="relative z-10 text-white">Start Hiring</span>
+          <button className="bg-primary px-8 py-4 rounded-xl text-lg font-semibold hover:scale-105 transition-all duration-300 pulse-glow">
+            <span className="relative z-10 text-black glow-text">
+              Let&apos;s Work Together
+            </span>
           </button>
 
           <button className="glassmorphic px-8 py-4 text-lg font-medium rounded-xl hover:bg-white/20 transition-all duration-300 flex items-center gap-2">
@@ -72,7 +77,7 @@ const HeroSection = () => {
 
         {/* Who Are You Section */}
         <div className="fade-up mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8 underline decoration-[var(--green)] decoration-2 underline-offset-8">
+          <h2 className="text-2xl md:text-3xl  mb-8 decoration-[var(--highlight-hsl)] decoration-2 underline underline-offset-8 e font-akrobat  font-bold">
             Who are you?
           </h2>
           <p className="text-white/60 mb-8">Click on a person 👇</p>
@@ -84,7 +89,7 @@ const HeroSection = () => {
                 onClick={() => setSelectedPersona(persona.id)}
                 className={`glassmorphic p-6 rounded-2xl cursor-pointer transition-all duration-300 hover:scale-105 ${
                   selectedPersona === persona.id
-                    ? "ring-2 ring-[var(--green)]"
+                    ? "ring-2 ring-[var(--highlight-hsl)]"
                     : ""
                 }`}
               >
@@ -102,8 +107,8 @@ const HeroSection = () => {
         {/* Client Logos */}
         <div className="fade-up">
           <p className="text-white/60 mb-8">
-            EditConnect video editors are perfect for creators, agencies, and
-            startups
+            Digital Marketing video editors are perfect for creators, agencies,
+            and startups
           </p>
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
             {[

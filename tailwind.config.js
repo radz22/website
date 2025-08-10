@@ -58,6 +58,11 @@ module.exports = {
           5: "hsl(var(--chart-5))",
         },
       },
+      fontFamily: {
+        satoshi: ["Satoshi", "sans-serif"],
+        playwrite: ['"Playwrite AU NSW"', "cursive"],
+        akrobat: ["Akrobat", "sans-serif"],
+      },
     },
   },
   // eslint-disable-next-line @typescript-eslint/no-require-imports
