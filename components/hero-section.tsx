@@ -1,7 +1,12 @@
 "use client";
 import { Play } from "lucide-react";
 import { useState } from "react";
-const HeroSection = () => {
+
+interface HeroSectionProps {
+  openFullscreen: () => void;
+}
+
+const HeroSection = ({ openFullscreen }: HeroSectionProps) => {
   const [selectedPersona, setSelectedPersona] = useState<string | null>(null);
   const personas = [
     {
@@ -69,7 +74,10 @@ const HeroSection = () => {
             </span>
           </button>
 
-          <button className="glassmorphic px-8 py-4 text-lg font-medium rounded-xl hover:bg-white/20 transition-all duration-300 flex items-center gap-2">
+          <button
+            className="glassmorphic px-8 py-4 text-lg font-medium rounded-xl hover:bg-white/20 transition-all duration-300 flex items-center gap-2"
+            onClick={() => openFullscreen()}
+          >
             <Play className="w-5 h-5" />
             Watch Demo
           </button>

@@ -14,7 +14,7 @@ const PortfolioSection = () => {
         "Attention-grabbing animated ad designed for Facebook and Instagram, combining motion graphics and concise messaging to drive engagement.",
       category: "ads",
       youtubeId: "",
-      vimeoId: "1105841520",
+      vimeoId: "800683306",
       tags: ["Animation", "Social Media", "Engagement", "Motion Graphics"],
     },
     {
@@ -34,7 +34,7 @@ const PortfolioSection = () => {
         "High-converting video ad tailored for product launches, featuring bold typography, fast-paced edits, and promotional hooks.",
       category: "ads",
       youtubeId: "",
-      vimeoId: "1105852120",
+      vimeoId: "800683306",
       tags: ["Product Ad", "Launch", "Motion Graphics", "CTA"],
     },
     {
@@ -44,7 +44,7 @@ const PortfolioSection = () => {
         "Dynamic property highlight reel for listings and real estate pages, optimized for Facebook Ads and YouTube campaigns.",
       category: "realestate",
       youtubeId: "",
-      vimeoId: "1105826753",
+      vimeoId: "800683306",
       tags: ["Real Estate", "Promo Video", "Property Listing", "Facebook Ads"],
     },
     {
@@ -54,7 +54,7 @@ const PortfolioSection = () => {
         "Optimized TikTok and IG Reel with trending audio, fast-paced transitions, and captions to boost shares and saves.",
       category: "social",
       youtubeId: "",
-      vimeoId: "1106101945",
+      vimeoId: "800683306",
       tags: ["TikTok", "Instagram", "Viral Video", "Short-Form"],
     },
     {
@@ -63,7 +63,7 @@ const PortfolioSection = () => {
       description:
         "Clean vlog edit with branding elements, lower thirds, and consistent pacing to increase watch time and channel growth.",
       category: "youtube",
-      youtubeId: "Ddka8XvjUXU",
+      youtubeId: "QsY8fnvMn6c",
       vimeoId: "",
       tags: ["YouTube", "Vlog", "Channel Branding", "Video Editing"],
     },
