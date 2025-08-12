@@ -15,7 +15,9 @@ import ServicesSection from "@/components/services";
 import ContactSection from "@/components/contact-us";
 import FastMetallicMarketingLoader from "@/components/loading-screen";
 import { Testimonials2 } from "@/components/testimonial-2";
+import FullscreenVideo from "@/components/fullscreen-video";
 export default function Home() {
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const [loading, setLoading] = useState(true);
   const observerRef = useRef<IntersectionObserver | null>(null);
 
@@ -60,10 +62,18 @@ export default function Home() {
     return <FastMetallicMarketingLoader />;
   }
 
+  const handleCloseFullscreen = () => {
+    setIsFullscreen(false);
+  };
+
+  const handleOpenFullscreen = () => {
+    setIsFullscreen(true);
+  };
+
   return (
     <main className="min-h-screen text-white">
       <Header />
-      <HeroSection />
+      <HeroSection openFullscreen={handleOpenFullscreen} />
       <BrandSection />
       <MeetFutureEditor />
       <VideoSection />
@@ -76,6 +86,8 @@ export default function Home() {
       <CtaSection />
       <ContactSection />
       <Footer />
+
+      {isFullscreen && <FullscreenVideo onClose={handleCloseFullscreen} />}
     </main>
   );
 }

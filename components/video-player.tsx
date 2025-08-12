@@ -7,6 +7,7 @@ interface VideoPlayerProps {
   title: string;
   thumbnail?: string;
   className?: string;
+  play?: boolean;
 }
 
 const VideoPlayer = ({
@@ -15,8 +16,9 @@ const VideoPlayer = ({
   title,
   thumbnail,
   className = "",
+  play,
 }: VideoPlayerProps) => {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(play !== undefined ? play : false);
 
   const handlePlay = () => {
     setIsPlaying(true);
