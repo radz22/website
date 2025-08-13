@@ -299,7 +299,7 @@ const FastMetallicMarketingLoader: React.FC = () => {
           ))}
         </div>
 
-        {isComplete && (
+        {/* {isComplete && (
           <div className="animate-fadeIn">
             <div
               className="flex items-center justify-center mb-4 w-14 h-14 mx-auto rounded-full bg-primary"
@@ -317,7 +317,7 @@ const FastMetallicMarketingLoader: React.FC = () => {
               NEXUS ENGINE READY FOR DEPLOYMENT
             </p>
           </div>
-        )}
+        )} */}
 
         {!isComplete && (
           <div className="flex justify-center space-x-2">

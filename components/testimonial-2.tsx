@@ -305,8 +305,8 @@ export function Testimonials2() {
         <div className="text-center mt-10 md:mt-12">
           <div className="inline-flex items-center gap-2 md:gap-3 glassmorphic  fade-up group hover:bg-white/15 transition-all duration-500 visible px-4 py-2 md:px-6 md:py-3 rounded-full shadow-md">
             <div className="flex items-center gap-2">
-              <div className="w-6 h-6 md:w-8 md:h-8 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-bold text-xs md:text-sm">
+              <div className="w-6 h-6 md:w-8 md:h-8 bg-primary rounded flex items-center justify-center">
+                <span className="text-black font-bold text-xs md:text-sm">
                   G
                 </span>
               </div>
